@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Blog Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #f4f4f4; padding: 1rem; text-align: center; }
+        nav ul { list-style: none; padding: 0; }
+        nav ul li { display: inline; margin: 0 1rem; }
+        main { max-width: 800px; margin: 0 auto; padding: 1rem; }
+        article { margin-bottom: 2rem; }
+        figure { margin: 0; }
+        figcaption { font-style: italic; text-align: center; }
+        blockquote { border-left: 4px solid #ccc; padding: 1rem; margin: 1rem 0; font-style: italic; }
+        aside { background: #f9f9f9; padding: 1rem; max-width: 300px; margin: 1rem auto; }
+        footer { background: #333; color: white; text-align: center; padding: 1rem; }
+        .skip-link { position: absolute; left: -9999px; }
+        .skip-link:focus { left: 10px; top: 10px; background: #fff; padding: 0.5rem; }
+    </style>
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header>
+        <h1>Blog Title</h1>
+        <nav aria-label="Primary">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <article>
+            <header>
+                <h2>Article Title</h2>
+                <p>Posted on <time datetime="2025-09-06">September 6, 2025</time> by Manzi David(DLOADIN)</p>
+            </header>
+            <figure>
+                <img src="/hero-image.jpg" alt="Descriptive alt text for hero image">
+                <figcaption>Caption for the hero image</figcaption>
+            </figure>
+            <p>Article content goes here. This is the main body of the article, providing detailed information.</p>
+            <blockquote cite="https://example.com/source">
+                <p>This is a pull quote from the article, highlighting a key point.</p>
+            </blockquote>
+            <p>More article content continues here, elaborating on the topic.</p>
+        </article>
+        <section aria-labelledby="related-heading">
+            <h3 id="related-heading">Related Articles</h3>
+            <ul>
+                <li><a href="#">Related Article 1</a></li>
+                <li><a href="#">Related Article 2</a></li>
+                <li><a href="#">Related Article 3</a></li>
+            </ul>
+        </section>
+    </main>
+    <aside aria-label="Sidebar">
+        <h2>Sidebar</h2>
+        <h3>Recent Posts</h3>
+        <ul>
+            <li><a href="#">Recent Post 1</a></li>
+            <li><a href="#">Recent Post 2</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>&copy; 2025 Blog Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
